@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosalia de Castro - Works</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+        body {
+            background-image: url('/images/background.jpg');
+            background-size: cover;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animated-background {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bolder;
+            padding: 10px 20px; 
+            background-color:  #45a592 ; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease; 
+        }
+
+        a:hover {
+            background-color: #004080; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Pagina de inicio</a>
+        <a href="/gallery">Galería</a>
+        <a href="/about">Acerca de su vida</a>
+    </nav>
+
+    <h1>Trabajos de Rosalía de Castro</h1>
+    <div class="animated-background">
+        <p>
+            Aquí puedes encontrar una selección de algunos de los trabajos destacados de Rosalía de Castro.
+            Bibliografía
+<ul>
+   <li>En Las Orillas Del Sar.</li> 
+   <li>Una voz dulce resonó en mi oído.</li> 
+    <li>La Hija Del Mar.</li>
+    <li>En las orillas del Sar.</li>
+    <li>Poesía completa..</li> 
+    <li>Cantares gallegos.</li>
+    <li>La flor.</li>
+</ul>
+        </p>
+    </div>
+</body>
+</html>

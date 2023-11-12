@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosalia de Castro - Galería de Fotos</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+        body {
+            background-image: url('/images/background.jpg');
+            background-size: cover;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 2px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animated-background {
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bolder;
+            padding: 10px 20px; 
+            background-color:  #45a592 ; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease; 
+        }
+
+        a:hover {
+            background-color: #004080; 
+        }
+
+    
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .verse-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery-item:hover .verse-overlay {
+            opacity: 1;
+        }
+
+        .verse {
+            text-align: center;
+            font-style: italic;
+            font-size: 1em;
+            color: #ffffff;
+            margin: 0;
+            padding: 10px;
+            max-width: 80%; 
+            line-height: 1; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Pagina de inicio</a>
+        <a href="/works">Sus trabajos</a>
+        <a href="/about">Acerca de su vida</a>
+    </nav>
+
+    <h1>Galería de Fotos de Rosalía de Castro</h1>
+    <div class="animated-background">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/images/foto1.jpg" alt="Foto 1">
+                <div class="verse-overlay">
+                    <p class="verse">
+                        Busca y anhela el sosiego...
+                        mas... ¿quién le sosegará?
+                        Con lo que sueña despierto,
+                        dormido vuelve a soñar.
+                        Que hoy como ayer, y mañana
+                        cual hoy, en su eterno afán,
+                        de hallar el bien que ambiciona
+                        cuando sólo encuentra el mal,
+                        siempre a soñar condenado,
+                        nunca puede sosegar.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/foto2.jpg" alt="Foto 2">
+                <div class="verse-overlay">
+                    <p class="verse">
+                        Te amo... ¿Por qué me odias?
+                        Te odio... ¿Por qué me amas?
+                        Secreto es éste el más triste
+                        y misterioso del alma.
+
+                        Mas ello es verdad... ¡Verdad
+                        dura y atormentadora!
+                        Me odias porque te amo;
+                        te amo porque me odias.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/foto3.jpg" alt="Foto 3">
+                <div class="verse-overlay">
+                    <p class="verse">
+                    
+                        Un manso río, una vereda estrecha,
+                        un campo solitario y un pinar,
+                        y el viejo puente rústico y sencillo
+                        completando tan grata soledad.
+
+                        ¿Qué es soledad? Para llenar el mundo
+                        basta a veces un solo pensamiento.
+                        Por eso hoy, hartos de belleza, encuentras
+                        el puente, el río y el pinar desiertos.
+
+                        No son nube ni flor los que enamoran;
+                        eres tú, corazón, triste o dichoso,
+                        ya del dolor y del placer el árbitro,
+                        quien seca el mar y hace habitable el polo.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/foto5.jpg" alt="Foto 5">
+                <div class="verse-overlay">
+                    <p class="verse">
+                        Yo no sé lo que busco eternamente...
+
+                        Yo no sé lo que busco eternamente
+                        en la tierra, en el aire y en el cielo;
+                        yo no sé lo que busco; pero es algo
+                        que perdí no sé cuándo y que no encuentro,
+                        aun cuando sueñe que invisible habita
+                        en todo cuanto toco y cuanto veo.
+                        Felicidad, no he de volver a hallarte
+                        en la tierra, en el aire, ni en el cielo,
+                        ¡aun cuando sé que existes
+                        y no eres vano sueño!
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
